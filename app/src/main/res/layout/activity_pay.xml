@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pay">
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logoa"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visions Energy Advisor"
+        android:id="@+id/appname"
+        android:textAlignment="center"
+        android:layout_below="@+id/logo"
+        android:textSize="20sp"
+        android:textColor="#1976d2"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appname"
+        android:id="@+id/rlPay"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ab0"
+            android:text="Nearest Dealer"
+            android:id="@+id/tv2" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_marginRight="100dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvDAdd"
+        android:textSize="17sp"
+        android:layout_below="@id/rlPay"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Site Visit BILL Amount"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv3"
+        android:textSize="19sp"
+        android:layout_below="@id/tvDAdd"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs XXXX*"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvBillAm"
+        android:textSize="24sp"
+        android:layout_below="@id/tv3"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="*This amount is Refundable once you Book the Order "
+        android:id="@+id/tv4"
+        android:layout_below="@id/tvBillAm"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Expert will visit Within 3 Working Days"
+        android:id="@+id/tvVisTim"
+        android:layout_below="@id/tv4"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bPay"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I agree to the "
+            android:id="@+id/cbTC"
+            android:textSize="14sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:id="@+id/tvTC"
+            android:gravity="center_horizontal"
+            android:textColor="@color/SubmitBtn"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_alignTop="@+id/cbTC"
+            android:layout_toRightOf="@+id/cbTC"
+            android:layout_toEndOf="@+id/cbTC" />
+    </RelativeLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bPay"
+        android:textColor="#fff"
+        android:src="@drawable/pay"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:layout_alignEnd="@+id/logo"
+        android:layout_alignStart="@+id/logo" />
+
+</RelativeLayout>

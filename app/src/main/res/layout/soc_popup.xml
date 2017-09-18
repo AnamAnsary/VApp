@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:layout_gravity="right|bottom"
+    android:layout_above="@+id/bSoc"
+    android:id="@+id/popup"
+
+    >
+
+    <ImageView
+        android:onClick="onClickbFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_Fb"
+        android:layout_gravity="right"
+        android:layout_weight="0.17"
+        android:src="@drawable/facebook"
+
+        />
+
+    <ImageView
+    android:onClick="onClickbTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_twit"
+        android:layout_gravity="right"
+        android:layout_weight="0.17"
+        android:src="@drawable/twitter"/>
+
+    <ImageView
+
+        android:onClick="onClickpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_Pin"
+        android:layout_gravity="right"
+        android:layout_weight="0.17"
+        android:src="@drawable/pinterest"/>
+
+    <ImageView
+        android:onClick="onClickblinkin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_LI"
+        android:layout_gravity="right"
+        android:layout_weight="0.17"
+        android:src="@drawable/linkedin"/>
+
+    <ImageView
+        android:onClick="onClickinsta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_insta"
+        android:layout_gravity="right"
+        android:layout_weight="0.17"
+        android:src="@drawable/instagram"/>
+
+    <ImageView
+        android:onClick="onClickbBlogger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_Blog"
+        android:layout_weight="0.17"
+        android:layout_gravity="right"
+        android:src="@drawable/blogger" />
+
+    <ImageView
+        android:onClick="onClickbFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_YT"
+        android:layout_gravity="right"
+        android:src="@drawable/yt1_64x64"
+
+        />
+
+</LinearLayout>

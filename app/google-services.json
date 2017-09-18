@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "929550555288",
+    "firebase_url": "https://visions-energy-advisor-146515.firebaseio.com",
+    "project_id": "visions-energy-advisor-146515",
+    "storage_bucket": "visions-energy-advisor-146515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929550555288:android:262a464356b345e2",
+        "android_client_info": {
+          "package_name": "com.vmechatronics.energyadvisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929550555288-mvl8950qn40h7ola18k115irbpd8m1d4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vmechatronics.energyadvisor",
+            "certificate_hash": "d5266ca8d6737854f8f1cf43b25dbbc2d533ac1e"
+          }
+        },
+        {
+          "client_id": "929550555288-ucgbujaipkse4554k863fvrakj8asno2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vmechatronics.energyadvisor",
+            "certificate_hash": "c497a64560a29ba7e8400bf5de7c3b606462dd71"
+          }
+        },
+        {
+          "client_id": "929550555288-bmgr1j34irahbkr9t3099asee48rfgi5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vmechatronics.energyadvisor",
+            "certificate_hash": "2e57b5262803ccaeaa9cd750703b6e11fd2df3d3"
+          }
+        },
+        {
+          "client_id": "929550555288-2m9ms3dp8v90s3j6m9anpvs2bmg58us8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "929550555288-50qj7mhkeuse8rpqs88iq7efdigm6v80.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vmechatronics.energyadvisor",
+            "certificate_hash": "8784205d0fe5fa204f357ac9a1edcc3036fde338"
+          }
+        },
+        {
+          "client_id": "929550555288-1ntlthrajt2942o572t8bjrpncfsk3d3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwPoIyK8-RWqwXRILbGc5jJXsBCZpSDEg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929550555288-2m9ms3dp8v90s3j6m9anpvs2bmg58us8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

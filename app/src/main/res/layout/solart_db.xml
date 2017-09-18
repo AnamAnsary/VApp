@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_btn"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="20dp"
+        android:padding="5dp"
+        android:background="@drawable/home_btn">
+        <TextView
+            android:id="@+id/dbt3"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solar System Types"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:background="@color/SubmitBtn"/>
+        <TextView
+            android:layout_below="@+id/dbt3"
+            android:id="@+id/db3tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On Grid"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <ImageView
+            android:layout_below="@+id/db3tv1"
+            android:id="@+id/db3iv1"
+            android:src="@drawable/ongrid"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db3iv1"
+            android:id="@+id/db3tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Low Electricity Bills\n  → Faster ROI\n  → Better Savings\n  → Large Utility Scale Model\n  → Night Power Drawn from Grid\n  → Surplus Supply to Grid"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/db3tv2"
+            android:id="@+id/db3tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OFF Grid"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <ImageView
+            android:layout_below="@+id/db3tv3"
+            android:id="@+id/db3iv2"
+            android:src="@drawable/offgrid"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db3iv2"
+            android:id="@+id/db3tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → No Electricity Bill\n  → High Return on Investment\n  → Independence\n  → Completely Independent\n  → Long Life\n  → Hassle Free"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/db3tv4"
+            android:id="@+id/db3tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hybrid Grid"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <ImageView
+            android:layout_below="@+id/db3tv5"
+            android:id="@+id/db3iv3"
+            android:src="@drawable/hybrid"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db3iv3"
+            android:id="@+id/db3tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Low Electricity\n  → High Return on Investment\n  → Feed-In Tarriffs\n  → Surplus supply to the grid\n  → Night power from battery\n  → No blackouts ever"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <ImageButton
+            android:id="@+id/db3btn1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/db3tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/got_it"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"/>
+    </RelativeLayout>
+</ScrollView>

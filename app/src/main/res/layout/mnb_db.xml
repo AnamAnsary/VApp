@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="20dp"
+        android:padding="5dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/dbt8"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type of Nuts"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:background="@color/SubmitBtn"/>
+        <TextView
+            android:layout_below="@+id/dbt8"
+            android:id="@+id/db8tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Galvanised Fasteners"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db8tv1"
+            android:id="@+id/db8tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="→ Regular bolts coated to have longer life"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/db8tv2"
+            android:id="@+id/db8tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stainless Steel Fasteners"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db8tv3"
+            android:id="@+id/db8tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="→ Stainless steel bolts that do not rust and have a very long life and durability."
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:id="@+id/db8btn1"
+            android:layout_below="@+id/db8tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/bluebtnripple"
+            android:text="Got it"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</ScrollView>

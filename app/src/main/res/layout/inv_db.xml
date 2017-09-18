@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/home_btn"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="20dp"
+        android:padding="5dp"
+        android:background="@drawable/home_btn">
+        <TextView
+            android:id="@+id/dbt9"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solar Panel Types"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:background="@color/SubmitBtn"/>
+        <TextView
+            android:layout_below="@+id/dbt9"
+            android:id="@+id/db9tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaco Inverter "
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db9tv1"
+            android:id="@+id/db9tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Best in class inverter technology\n  → German technology\n  → Remote monitoring included\n  → Cam/Mod bus feature available"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/db9tv2"
+            android:id="@+id/db9tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delta Inverter"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db9tv3"
+            android:id="@+id/db9tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Good inverter technology\n  → Remote monitoring optional at extra cost\n  → Compatible across all grids"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/db9tv4"
+            android:id="@+id/db9tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltronics Inverter"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db9tv5"
+            android:id="@+id/db9tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Taiwanese technology\n  → Remote monitoring optional at extra cost\n  → Mod bus feature available"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/db9tv6"
+            android:id="@+id/db9tv7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Studer Inverter"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db9tv7"
+            android:id="@+id/db10tv8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Best in class Swiss technology\n  → World leader in hybrid segment\n  → Remote monitoring optional at extra cost\n  → Compatible across all types in India"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:id="@+id/db9btn1"
+            android:layout_below="@+id/db10tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+
+            android:background="@drawable/bluebtnripple"
+            android:text="Got it"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</ScrollView>

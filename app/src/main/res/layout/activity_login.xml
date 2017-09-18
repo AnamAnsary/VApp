@@ -1,0 +1,308 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Login"
+    android:clickable="false">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logoa"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Visions Energy Advisor"
+        android:textAlignment="center"
+        android:textColor="#1976d2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/appname"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter your Username or Email"
+            android:layout_below="@id/appname"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:drawableRight="@android:drawable/sym_action_email" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+   <!-- <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutpass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/textInputLayout"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:passwordToggleContentDescription="Show Password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorAccent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:padding="10dp"/>
+    </android.support.design.widget.TextInputLayout>-->
+
+
+
+
+  <!--  <EditText
+        android:id="@+id/editText"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:padding="10dp"
+
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/textInputLayout"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintHorizontal_bias="0.0" />-->
+
+    <!--  <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/etUser"
+          android:layout_below="@id/appname"
+          android:layout_marginTop="12dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"
+          android:drawableRight="@android:drawable/sym_action_email"
+          android:textSize="20sp"
+          android:inputType="textEmailAddress"
+          android:padding="10dp"
+          android:background="@drawable/bg_layout"
+          android:hint="Username or Email"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="textPassword"
+          android:layout_marginRight="20dp"
+          android:fontFamily="sans-serif"
+          android:layout_marginLeft="20dp"
+          android:textSize="20sp"
+          android:padding="10dp"
+          android:layout_marginTop="2dp"
+          android:background="@drawable/bg_layout"
+          android:id="@+id/etPass"
+          android:hint="Password"
+          android:drawableRight="@android:drawable/ic_partial_secure"
+          android:layout_below="@+id/etUser"/>-->
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutpass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:passwordToggleContentDescription="Show Password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorAccent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/bSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bluebtnripple"
+        android:cropToPadding="false"
+        android:elevation="22dp"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/logo"
+        app:layout_constraintRight_toRightOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutpass"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <!--android:background="#01579b"-->
+    <Button
+        android:id="@+id/tvForPas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bluebtnripple"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:text="Forgot Password"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@+id/bSignIn"
+        app:layout_constraintRight_toRightOf="@+id/bSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/bSignIn"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <Button
+        android:id="@+id/bGPlus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/redbtnripple"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:text="Connect with Google+"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="visible"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/tvForPas"
+        app:layout_constraintRight_toRightOf="@+id/tvForPas"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvForPas" />
+
+
+    <!--<ImageButton
+        android:src="@drawable/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/tvSignUp"
+        android:layout_below="@+id/bGPlus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:cropToPadding="false"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_alignStart="@+id/logo"
+        android:layout_alignEnd="@+id/logo"/>-->
+
+    <Button
+        android:id="@+id/tvSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bluebtnripple"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@+id/bGPlus"
+        app:layout_constraintRight_toRightOf="@+id/bGPlus"
+        app:layout_constraintTop_toBottomOf="@+id/bGPlus"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.0" />
+    <!--    style="@style/Widget.AppCompat.Button.Colored"-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help Center"
+        android:id="@+id/tvHelp"
+        android:textColor="#222"
+        android:textSize="16sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUp"
+        app:layout_constraintHorizontal_bias="0.498" />
+</android.support.constraint.ConstraintLayout>
+

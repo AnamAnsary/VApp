@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:exported="true"
+    tools:context=".Profile">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/logoa"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visions Energy Advisor"
+        android:id="@+id/appname"
+        android:textAlignment="center"
+        android:layout_below="@+id/logo"
+        android:textSize="20sp"
+        android:textColor="#1976d2"
+        android:textStyle="bold"
+        />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_below="@id/appname"
+       android:layout_marginTop="2dp"
+       android:weightSum="4">
+        <ImageButton
+            android:id="@+id/tvEPC"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/profile_bar_1_600x150"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:paddingTop="3dp"/>
+
+        <ImageButton
+            android:layout_below="@id/tvEPC"
+            android:id="@+id/tvMQC"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/quotes_600x150"
+            android:background="@null"
+            android:paddingTop="3dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/tvMTC"
+            android:layout_below="@id/tvMQC"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/payment_600x150"
+            android:background="@null"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/tvSOC"
+            android:layout_below="@id/tvMTC"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/sign_out_bar_600x150"
+            android:background="@null"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="#fff"
+            android:text="Home"
+            android:textSize="10sp"
+            android:textColor="#349bff"
+            android:drawableTop="@drawable/home_2_50x50"
+            android:id="@+id/bHome"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bUser"
+            android:background="#fff"
+            android:text="Profile"
+            android:textColor="#349bff"
+            android:textSize="10sp"
+            android:padding="10dp"
+            android:drawableTop="@drawable/profile_50x50"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bWeb"
+            android:layout_alignBottom="@+id/button"
+            android:background="#fff"
+            android:drawableTop="@drawable/web_50x50"
+            android:text="Website"
+            android:textColor="#349bff"
+            android:textSize="10sp"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bSoc"
+            android:text="Social"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:drawableTop="@drawable/share_50x50"
+            android:textColor="#349bff"
+            android:textSize="10sp"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us | Help Center"
+        android:id="@+id/tvCUHC"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+         />
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:contextClickable="false"
+    android:id="@+id/home">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logoa"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteX="80dp"
+        tools:layout_conversion_absoluteY="0dp"
+        tools:layout_conversion_absoluteWidth="200dp"
+        tools:layout_conversion_absoluteHeight="110dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="Visions Energy Advisor"
+        android:id="@+id/appname"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#1976d2"
+        android:textStyle="bold"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="110dp"
+        tools:layout_conversion_absoluteWidth="360dp"
+        tools:layout_conversion_absoluteHeight="23dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <Button
+        android:id="@+id/bSolCalc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/panel"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Solar\nCalculator"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appname"
+        tools:layout_conversion_absoluteHeight="120dp"
+        tools:layout_conversion_absoluteWidth="360dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="151dp" />
+
+    <!--<Button
+        android:id="@+id/bLitCal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/batt_main_blue_outline"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif"
+        android:text="Lithium Batteries"
+        android:textAlignment="center"
+        android:textColor="@color/wallet_bright_foreground_holo_light"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:typeface="normal"
+        android:visibility="visible"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bSolCalc"
+        tools:layout_conversion_absoluteHeight="133dp"
+        tools:layout_conversion_absoluteWidth="280dp"
+        tools:layout_conversion_absoluteX="40dp"
+        tools:layout_conversion_absoluteY="321dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2" />-->
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_conversion_absoluteHeight="82dp"
+        tools:layout_conversion_absoluteWidth="360dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="485dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/bHome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:drawableTop="@drawable/home_2_50x50"
+            android:padding="10dp"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textColor="#349bff"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/bUser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:drawableTop="@drawable/profile_50x50"
+            android:padding="10dp"
+            android:text="My Profile"
+            android:textAlignment="center"
+            android:textColor="#349bff"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/bWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/button"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:drawableTop="@drawable/web_50x50"
+            android:padding="10dp"
+            android:text="Website"
+            android:textAlignment="center"
+            android:textColor="#349bff"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/bSoc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:drawableTop="@drawable/share_50x50"
+            android:padding="10dp"
+            android:text="Social"
+            android:textAlignment="center"
+            android:textColor="#349bff"
+
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bLitCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/batt_main_blue_outline_50"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLiBatt"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="@+id/tvLiBatt"
+        android:layout_marginTop="0dp"
+        app:layout_constraintVertical_bias="0.505"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvLiBatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif"
+        android:text="Lithium Batteries"
+        android:textAlignment="center"
+        android:textColor="@color/wallet_bright_foreground_holo_light"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:typeface="normal"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/bSolCalc"
+        android:padding="50dp"
+        android:clickable="true"/>
+
+
+</android.support.constraint.ConstraintLayout>

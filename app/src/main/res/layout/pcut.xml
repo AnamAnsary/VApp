@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In case of Regular Power Cuts, Please Select the Average Hours of Power Cuts Per Day."
+        android:id="@+id/textView"
+        android:layout_margin="15dp"
+        android:paddingLeft="5dp"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/abc_input_method_navigation_guard" />
+
+    <Button
+        android:id="@+id/dbPCbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@+id/textView"
+        android:background="@drawable/bluebtnripple"
+        android:text="Got it"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

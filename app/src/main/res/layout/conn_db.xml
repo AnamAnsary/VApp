@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/home_btn">
+
+    <TextView
+        android:id="@+id/dbt2"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connection Types"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:background="@color/SubmitBtn"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dbt2"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_below="@+id/dbt2"
+                android:id="@+id/db2tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Low Tension vs High Tension"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="#a34"/>
+
+            <TextView
+                android:layout_below="@+id/db2tv1"
+                android:id="@+id/db2tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- LT single-phase (230V)* - Most residential connections"
+                android:textSize="18sp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_below="@+id/db2tv2"
+                android:id="@+id/db2tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- LT three-phase (400V)* - Small shops, homes, offices, hotels, guest houses, theaters, etc &amp; very small manufacturing units (like bakery, stone cutting, poha mills, etc)."
+                android:textSize="18sp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_below="@+id/db2tv4"
+                android:id="@+id/db2tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- HT (11kV)* - Most heavy industries."
+                android:textSize="18sp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_below="@+id/db2tv3"
+                android:id="@+id/db2tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- HT (415V)* - Bulk supply for residential colonies &amp; for bigger offices, film studios, etc."
+                android:textSize="18sp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/db2tv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* The tariff structures of most state distribution companies are different for LT and HT."
+                android:textSize="14sp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="#333"
+                android:layout_below="@+id/db2tv5"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/db2btn1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/db2tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:cropToPadding="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/got_it"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'EnergyAdvisor'
+            keyPassword 'Vision@123'
+            storeFile file('/home/vmplapp/Anam/AndroidStudioProjects/EnergyAdvisor.jks')
+            storePassword 'Vision@123'
+        }
+    }
+    compileSdkVersion 25//23
+    buildToolsVersion '25.0.0'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId 'com.vmechatronics.energyadvisor'
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionName '2.1'
+        multiDexEnabled true
+        versionCode 12
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//.txt'
+        }
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+/*}*/
+    dependencies {
+        compile 'com.android.support:multidex:1.0.0'
+        //compile 'com.google.android.gms:play-services-auth:9.8.0'
+
+        //  compile fileTree(include: ['*.jar'], dir: 'libs')
+        testCompile 'junit:junit:4.12'
+        compile fileTree(include: '*.jar', dir: 'libs')
+        compile 'com.android.volley:volley:1.0.0'
+
+
+        // compile 'com.google.android.gms:play-services:9.4.0'
+        compile 'com.google.android.gms:play-services:10.0.1'
+        compile 'com.google.maps.android:android-maps-utils:0.4.+'
+        compile 'org.apache.httpcomponents:httpcore:4.4.1'
+        //   compile 'org.apache.httpcomponents:httpclient:4.3.1'  //'org.apache.httpcomponents:httpclient:4.5'
+        compile 'com.google.android.gms:play-services-ads:10.0.1'
+        compile 'com.google.android.gms:play-services-auth:10.0.1'
+        compile 'com.google.android.gms:play-services-gcm:10.0.1'
+
+        compile 'com.android.support:design:25.2.0'
+        compile 'com.android.support:support-v4:25.0.0'
+
+
+        //compile 'com.android.support:design:23.0.0'
+
+        compile 'com.google.firebase:firebase-core:10.0.1'
+        compile 'com.google.firebase:firebase-messaging:10.0.1'
+        compile 'com.google.firebase:firebase-auth:10.0.1'
+        compile 'com.google.firebase:firebase-crash:10.0.1'
+
+        //compile 'com.android.support:support-v4:22.1.1'
+
+        compile 'com.android.support:appcompat-v7:25.1.0'
+        compile "com.android.support:support-core-utils:25.1.0"
+        compile 'com.android.support:cardview-v7:25.1.0'
+        compile 'com.android.support:recyclerview-v7:25.1.0'
+    }
+    productFlavors {
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+}

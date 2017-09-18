@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:padding="5dp"
+    android:background="@drawable/home_btn">
+    <TextView
+        android:id="@+id/dbt1"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Charging your Battery"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:background="@color/SubmitBtn"/>
+    <TextView
+        android:layout_below="@+id/dbt1"
+        android:id="@+id/db1tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Charge_db"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:textColor="#000"/>
+    <Button
+        android:id="@+id/db1btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+
+        android:background="@drawable/bluebtnripple"
+        android:text="Got it"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_below="@+id/db1tv1"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vmechatronics.energyadvisor">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-sdk android:minSdkVersion="16"
+        android:targetSdkVersion="25"
+        android:maxSdkVersion="25" />
+
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:icon="@mipmap/myicon"
+        android:label="Visions Energy Advisor"
+        android:supportsRtl="true"
+        android:theme="@style/MyApp"
+        android:name="android.support.multidex.MultiDexApplication">
+        <!--android:name="android.support.multidex.">
+        android:name="android.support.multidex.MultiDexApplication"-->
+
+
+        <activity android:name=".Profile">
+            <intent-filter>
+                <action android:name="com.vmechatronics.energyadvisor.OPEN_ACTIVITY_1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+           <!-- android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">-->
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+
+            </intent-filter>
+
+        </activity>
+
+
+        <activity android:name=".Licalcu"           android:screenOrientation="portrait"/>
+        <activity android:name=".Login"             android:screenOrientation="portrait"/>
+        <activity android:name=".SignUp"            android:screenOrientation="portrait"/>
+        <activity android:name=".Choice"            android:screenOrientation="portrait"/>
+        <activity android:name=".OTP"               android:screenOrientation="portrait"/>
+        <activity android:name=".Quote"             android:screenOrientation="portrait"/>
+        <activity android:name=".Book"              android:screenOrientation="portrait"/>
+        <activity android:name=".mainActivity"      android:screenOrientation="portrait"/>
+        <activity android:name=".PayUMoney"         android:screenOrientation="portrait"/>
+        <activity android:name=".AfterTrans"        android:screenOrientation="portrait"/>
+        <!--<activity android:name=".Profile"           android:screenOrientation="portrait"/>-->
+        <activity android:name=".ForPass"           android:screenOrientation="portrait"/>
+        <activity android:name=".EditProf"          android:screenOrientation="portrait"/>
+        <activity android:name=".MyTrans"           android:screenOrientation="portrait"/>
+        <activity android:name=".ChangePassword"    android:screenOrientation="portrait"/>
+        <activity android:name=".Pay"               android:screenOrientation="portrait"/>
+        <activity android:name=".Getph"             android:screenOrientation="portrait"/>
+        <activity android:name=".GSignInActivity"   android:screenOrientation="portrait"/>
+        <activity android:name=".OrderBatt"         android:screenOrientation="portrait"/>
+        <activity android:name=".order_lithium"     android:screenOrientation="portrait" />
+        <activity android:name=".MyBatt"            android:screenOrientation="portrait" />
+        <activity android:name=".DownloadQuotes"    android:screenOrientation="portrait" />
+        <activity android:name=".LiBattListActivity"      android:screenOrientation="portrait" />
+        <activity android:name=".MyQuotesActivity"      android:screenOrientation="portrait"  />
+
+
+        <!--<activity android:name=".BattListFragment"         android:screenOrientation="portrait" />
+        <activity android:name=".BattWebViewerFragment"         android:screenOrientation="portrait" />
+-->
+      <!--  <activity android:name=".CustomListofBatt"    android:screenOrientation="portrait" />-->
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--<activity android:name=".Popup"/>-->
+<!--<activity android:name=".onclick"/>--><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Home"/>
+
+        <!-- Firebase Notifications -->
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+
+    </application>
+
+</manifest>

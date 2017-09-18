@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logoa"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visions Energy Advisor"
+        android:id="@+id/appname"
+        android:textAlignment="center"
+        android:layout_below="@+id/logo"
+        android:textSize="20sp"
+        android:textColor="#1976d2"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello! Name,"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/ltvName"
+        android:layout_below="@+id/appname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Your Quote for the Battery Power system has been sent to your mail and your Download is available here. Thank you for taking your First Step towards Going Green!"
+        android:id="@+id/tv12"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_below="@id/ltvName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUOTE ID : MMDDYYXXX"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/ltvRefID"
+        android:textSize="16sp"
+        android:layout_below="@+id/tv12"
+        android:layout_alignStart="@+id/logo"
+         />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbDowQuo"
+        android:drawableRight="@android:drawable/stat_sys_download"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ltvRefID"
+        android:background="@null"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/downloadquote"
+        android:layout_alignStart="@+id/ltvRefID"
+        android:layout_alignEnd="@+id/ltvRefID" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Book Your Site visit NOW and call our Expert at your Door!"
+        android:id="@+id/tvBkNow"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/llQBH"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/llQBH"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/tvBkNow"
+        android:layout_alignStart="@+id/tvBkNow">
+
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lBkNow"
+            android:src="@drawable/booknow"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bGoHom"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:src="@drawable/home123"
+            android:cropToPadding="false"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+</RelativeLayout>

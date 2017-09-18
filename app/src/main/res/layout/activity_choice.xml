@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Choice"
+    android:visibility="visible">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="7"
+        android:id="@+id/llC1">
+        <Button
+            android:fontFamily="sans-serif"
+            android:text="Solar Panel Type"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/sSolarPanel"
+            android:layout_margin="5dp"
+            android:paddingLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/bg_spinner"/>
+        <TextView
+            android:onClick="onSolPanDB"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:weightSum="7"
+        android:id="@+id/llC2"
+        android:layout_below="@id/llC1">
+        <Button
+            android:fontFamily="sans-serif"
+            android:paddingLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_spinner"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sInvType"
+            android:layout_below="@id/sSolarPanel"/>
+        <TextView
+            android:onClick="onInvDB"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:weightSum="7"
+        android:id="@+id/llC3"
+        android:layout_below="@id/llC2">
+
+        <Button
+            android:fontFamily="sans-serif"
+            android:paddingLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/bg_spinner"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sWirCab"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"/>
+        <TextView
+            android:onClick="onWirDB"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:weightSum="7"
+        android:id="@+id/llC4"
+        android:layout_below="@id/llC3">
+        <Button
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/bg_spinner"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sMNB"
+            android:layout_margin="5dp"
+            android:paddingLeft="20dp"
+            android:textAllCaps="false"
+            android:gravity="left|center_vertical"/>
+        <TextView
+            android:onClick="onMNBDB"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:weightSum="7"
+        android:id="@+id/llC5"
+        android:layout_below="@id/llC4">
+        <Button
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/bg_spinner"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sRoofType"
+            android:layout_below="@id/sMNB"
+            android:layout_margin="5dp"
+            android:paddingLeft="20dp"
+            android:gravity="left|center_vertical"/>
+
+        <TextView
+            android:id="@+id/tvRoofI"
+            android:onClick="onRoofDB"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:weightSum="7"
+    android:id="@+id/llC6"
+    android:layout_below="@id/llC5">
+    <Button
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/bg_spinner"
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sMeterType"
+        android:layout_margin="5dp"
+        android:paddingLeft="20dp"
+        android:gravity="left|center_vertical"/>
+
+    <TextView
+        android:onClick="onMeterDB"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:textColor="#aaa"
+        android:drawableLeft="@android:drawable/ic_menu_info_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:weightSum="7"
+        android:id="@+id/llC7"
+        android:layout_below="@id/llC6">
+        <Button
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/bg_spinner"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sShedTyp"
+            android:textAllCaps="false"
+            android:layout_below="@id/sRoofType"
+            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:textStyle="normal"
+            android:gravity="left|center_vertical"
+            android:visibility="invisible" />
+
+        <TextView
+            android:onClick="onRRDB"
+            android:id="@+id/tvShedI"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+    <LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginLeft="5dp"
+android:weightSum="7"
+android:id="@+id/llC8"
+android:layout_below="@id/llC7">
+<Button
+    android:fontFamily="sans-serif"
+    android:textSize="18sp"
+    android:textColor="@color/colorPrimary"
+    android:background="@drawable/bg_spinner"
+    android:layout_weight="6"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/sPowerCut"
+    android:textAllCaps="false"
+    android:layout_below="@+id/sShedTyp"
+    android:layout_margin="5dp"
+    android:layout_centerHorizontal="true"
+    android:paddingLeft="20dp"
+    android:textStyle="normal"
+    android:gravity="left|center_vertical"
+    android:visibility="invisible" />
+<TextView
+    android:onClick="onPCut"
+    android:id="@+id/tvPCI"
+    android:layout_weight="1"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:paddingLeft="10dp"
+    android:paddingRight="20dp"
+    android:textColor="#aaa"
+    android:drawableLeft="@android:drawable/ic_menu_info_details"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:visibility="invisible" />
+</LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bGetQuo"
+        android:src="@drawable/quoteget"
+        android:layout_below="@+id/llC8"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:cropToPadding="false"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_margin="50dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+
+</RelativeLayout>
+</ScrollView>

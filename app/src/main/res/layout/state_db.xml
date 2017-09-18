@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:padding="5dp"
+    android:background="@drawable/home_btn">
+    <TextView
+        android:id="@+id/dbt1"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="State Choice"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:background="@color/SubmitBtn"/>
+    <TextView
+        android:layout_below="@+id/dbt1"
+        android:id="@+id/db1tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/state_db_st"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:textColor="#000"/>
+    <ImageButton
+        android:id="@+id/db1btn1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/db1tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Got It"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/got_it"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"/>
+</RelativeLayout>

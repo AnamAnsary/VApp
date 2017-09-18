@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="#5c6bc0"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="8dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="4dp"
+        card_view:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:id="@+id/RLQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_layout">
+           <!-- android:layout_below="@id/tvMQ"-->
+
+            <RelativeLayout
+                android:id="@+id/llQID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:text="Quote ID"
+                    android:textColor="#424242"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvQID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="MMDDYYXXX"
+                    android:textColor="#424242"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tvDate"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:textColor="#424242"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvQDT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvQID"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="12/12/2016"
+                    android:textColor="#424242"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+            <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_below="@id/llQID"
+            android:id="@+id/llQDT"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#424242"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12/12/2016"
+                android:id="@+id/tvQDT"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:textColor="#424242"
+                android:layout_gravity="center"/>
+        </LinearLayout>-->
+
+            <TextView
+                android:id="@+id/tvBSV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="BOOK SITE VISIT"
+                android:textColor="#3f51b5"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/llQID"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

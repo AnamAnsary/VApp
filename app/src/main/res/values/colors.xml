@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#2196f3</color>
+    <color name="SubmitBtn">#3333aa</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="btnbgblue">#1b6fb7</color>
+    <color name="btnbluepressed">#155892</color>
+    <color name="btnbluefocussed">#79B7EB</color>
+
+    <color name="btnbgred">#c93332</color>
+    <color name="btnredpressed">#A32929</color>
+    <color name="btnredfocussed">#E08484</color>
+
+
+</resources>

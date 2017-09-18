@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_btn">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="20dp"
+        android:padding="5dp"
+        android:background="@drawable/home_btn">
+        <TextView
+            android:id="@+id/dbt7"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flat Roof Mounting"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:background="@color/SubmitBtn"/>
+        <TextView
+            android:layout_below="@+id/dbt7"
+            android:id="@+id/db7tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cement Base"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+
+
+        <ImageView
+            android:onClick="onMntPB"
+            android:id="@+id/db7iv2"
+            android:src="@drawable/flatpanda"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/db7tv2"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/flatpanda"/>
+        <TextView
+            android:text="Coventional Structures which require drilling in the roof stable installation."
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/db_cb1"
+            android:layout_below="@+id/db7iv1"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <TextView
+            android:id="@+id/db7tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Polar Bear"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/db_cb1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Specialized Mounting Structures with no drilling in the roof. So no leakages."
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/db_pb1"
+            android:layout_alignBottom="@+id/db7iv2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S5"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"
+            android:layout_below="@+id/db7iv2"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:onClick="onMnts5"
+            android:id="@+id/db7iv3"
+            android:src="@drawable/s5_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/db7btn1"
+            android:layout_below="@+id/db_s5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+
+            android:background="@drawable/bluebtnripple"
+            android:text="Got it"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:text="Specialized light weight mounting structures for Roof Top Sheds."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/db_s5"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_below="@+id/db7iv3"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/db7iv1"
+            android:src="@drawable/flatcem"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/db7tv1"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</ScrollView>

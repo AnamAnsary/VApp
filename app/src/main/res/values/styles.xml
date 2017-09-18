@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MyApp" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+
+    <style name="CategoryStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:gravity">center_vertical</item>
+            <item name="android:padding">16dp</item>
+            <item name="android:textColor">@android:color/black</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <color name="black">#FF000000</color>
+    <color name="whitegrey">#FFF2F2F2</color>
+
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/popup_background</item>
+       <!-- <item name="@android:windowBackground">@color/whitegrey</item>
+        <item name="@android:textColor">@color/black</item>-->
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#009688</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:background">#bdbdbd</item>
+    </style>
+
+    <style name="SplashTheme" parent="MyApp">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="customAccentOverlay" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/btnbgblue</item>
+    </style>
+
+</resources>

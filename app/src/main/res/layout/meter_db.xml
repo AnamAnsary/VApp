@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="20dp"
+        android:padding="5dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/dbt5"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Metering Type"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:background="@color/SubmitBtn"/>
+        <TextView
+            android:layout_below="@+id/dbt5"
+            android:id="@+id/db5tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Net Metering Type"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db5tv1"
+            android:id="@+id/db5tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In net metering arrangement, the meter is allowed to operate in both directions. The electricity produced by the PV system either provides power directly to the loads or is exported to the grid making the meter rotate backwards, reducing the actual number of units consumed as counted by the meter . "
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/db5tv2"
+            android:id="@+id/db5tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gross Metering"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db5tv3"
+            android:id="@+id/db5tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This type of metering measures the generation and import of your electricity separately. By metering the total number of solar units of generated and total number of units consumed, this method allows the utility to charge the customers separately for import, generation and net consumption and if required, even at different rates. This is imposed by having two separate meters or using dual metering . However, in this type of configuration, all of the energy generated is exported to the grid and user has no incentive to increase self-consumption."
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:id="@+id/db5btn1"
+            android:layout_below="@+id/db5tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+
+            android:background="@drawable/bluebtnripple"
+            android:text="Got it"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>

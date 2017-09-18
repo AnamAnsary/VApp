@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AfterTrans">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logoa"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visions Energy Advisor"
+        android:id="@+id/appname"
+        android:textAlignment="center"
+        android:layout_below="@+id/logo"
+        android:textSize="20sp"
+        android:textColor="#1976d2"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_below="@id/appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:text="Transaction Successful"
+        android:textSize="22sp"
+        android:id="@+id/tvTranSF"/>
+
+
+    <RelativeLayout
+        android:id="@+id/llQID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_layout"
+        android:weightSum="2"
+        android:padding="10dp"
+        android:layout_below="@id/tvTranSF"
+        android:layout_centerHorizontal="true"
+       >
+
+        <TextView
+            android:id="@+id/tvTransId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="Transaction ID : "/>
+
+        <TextView
+            android:id="@+id/tvTID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="MMDDYYXXX"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvTransId"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="Amount"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTID"
+            android:layout_weight="1"
+            android:text="Rs. XXX"
+            android:textStyle="bold"
+            android:id="@+id/tvTAM"
+            android:textSize="16sp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"/>
+
+       <!-- <TextView
+            android:id="@+id/tvQDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvQID"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="12/12/2016"
+            android:textColor="#424242"
+            android:textSize="16sp" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_below="@+id/tvAmt"
+            android:layout_height="wrap_content"
+            android:text="Quote ID"
+            android:layout_marginTop="3dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/tvTAM"
+            android:text="Rs. XXX"
+            android:textStyle="bold"
+            android:id="@+id/tvTQQQ"
+            android:textSize="16sp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/tvTrDet"
+            android:layout_below="@id/tvTQQQ"
+            android:text=""/>
+
+    </RelativeLayout>
+
+
+   <!-- <RelativeLayout
+        android:layout_below="@id/llQID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:id="@+id/llTID">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:text="Transaction ID : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MMDDYYXXX"
+                android:textStyle="bold"
+                android:id="@+id/tvTID2"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/llTID"
+            android:id="@+id/llTAM">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="Amount"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rs. XXX"
+                android:textStyle="bold"
+                android:id="@+id/tvTAM2"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/llTAM"
+            android:id="@+id/llTQQQ">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="Quote ID"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rs. XXX"
+                android:textStyle="bold"
+                android:id="@+id/tvTQQQ2"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/tvTrDet"
+            android:layout_below="@id/llTQQQ"
+            android:text=""/>
+    </RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:background="#fff"
+            android:text="Home"
+            android:textSize="10sp"
+            android:textColor="#349bff"
+            android:drawableTop="@drawable/home_2_50x50"
+            android:id="@+id/bHome" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bUser"
+            android:background="#fff"
+            android:text="Profile"
+            android:textColor="#349bff"
+            android:textSize="10sp"
+            android:padding="9dp"
+            android:drawableTop="@drawable/profile_50x50"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bWeb"
+            android:layout_alignBottom="@+id/button"
+            android:background="#fff"
+            android:drawableTop="@drawable/web_50x50"
+            android:text="Website"
+            android:textColor="#349bff"
+            android:textSize="10sp"
+            android:padding="9dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bSoc"
+            android:text="Social"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:drawableTop="@drawable/share_50x50"
+            android:textColor="#349bff"
+            android:textSize="10sp"
+            android:padding="9dp"/>
+    </LinearLayout>
+</RelativeLayout>

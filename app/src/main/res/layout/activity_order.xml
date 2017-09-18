@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.vmechatronics.energyadvisor.OrderBatt">
+
+
+    <LinearLayout
+        android:id="@+id/dis_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="8"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <TextView
+        android:id="@+id/batt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:layout_marginBottom="15dp"
+        android:padding="15dp"
+        android:layout_weight="1"
+        android:text="Selected Battery :"/>
+
+        <Button
+            android:fontFamily="sans-serif"
+            android:textColor="@color/SubmitBtn"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:paddingLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:id="@+id/selB"
+            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_spinner"/>
+        </LinearLayout>
+
+    <!--<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select how do you want to charge your battery"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"/>-->
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="7"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2">
+
+
+        <Button
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:id="@+id/BCharge"
+        android:layout_margin="5dp"
+        android:paddingLeft="20dp"
+        android:gravity="left|center_vertical"
+        android:background="@drawable/bg_spinner" />
+
+        <TextView
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:onClick="onChargeDB"/>
+            <!--android:onClick="onSolPanDB"-->
+    </LinearLayout>
+
+    <!--<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select minimum hours of backup"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="7"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/BMinHrs"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/bg_spinner"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:onClick="onMinHrsDB"/>
+
+        <!--android:onClick="onSolPanDB"-->
+    </LinearLayout>
+
+    <!--<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select load that you want on battery"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"/>-->
+
+    <!--<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select hours of powercut"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="7"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/BPowerC"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/bg_spinner"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:onClick="onPCDB"/>
+        <!--android:onClick="onSolPanDB"-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="7"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2" >
+
+        <Button
+            android:id="@+id/BPC"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/bg_spinner"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:onClick="onBpc"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="7"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2" >
+
+        <EditText
+            android:id="@+id/ETLoad"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:paddingStart="20dp"
+            android:inputType="numberDecimal"
+            android:hint="Enter total load (in kW)" />
+
+        <TextView
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:onClick="onTotalLdDB"/>
+        <!--android:onClick="onSolPanDB"-->
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="7"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2" >
+
+        <EditText
+            android:id="@+id/ELoad"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:paddingStart="20dp"
+            android:inputType="numberDecimal"
+            android:hint="Enter load on battery(in kW)" />
+
+        <TextView
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#aaa"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:onClick="onLdDB"/>
+        <!--android:onClick="onSolPanDB"-->
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bOrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ELoad"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bluebtnripple"
+        android:cropToPadding="true"
+        android:text="Get Suggestion"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:padding="10dp"/>
+
+</LinearLayout>

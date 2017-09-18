@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@id/logo"
+        android:src="@drawable/logoa"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-5dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Visions Energy Advisor"
+        android:id="@+id/appname"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#1976d2"
+        android:textStyle="bold"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/tvReg"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/appname" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:id="@+id/ED1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/appname"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/appname"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvReg"
+        app:layout_constraintHorizontal_bias="0.0">
+
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvReg"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ED2"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/ED1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/ED1"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/ED1"
+        app:layout_constraintHorizontal_bias="0.0">
+
+
+        <EditText
+            android:id="@+id/etMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etName"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ED3"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/ED2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/ED2"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/ED2"
+        app:layout_constraintHorizontal_bias="1.0">
+
+        <EditText
+            android:id="@+id/etContNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etMail"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/sState"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@null"
+            android:fontFamily="sans-serif"
+            android:gravity="left|center_vertical"
+            android:padding="12dp"
+            android:text="Select State"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/ED3"
+            app:layout_constraintRight_toRightOf="@+id/ED3"
+            app:layout_constraintTop_toBottomOf="@+id/ED3"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+    <!--</LinearLayout>-->
+
+    <!--<EditText
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:gravity="left|center_vertical"
+        android:layout_width="match_parent"
+        android:hint="State"
+        android:layout_height="wrap_content"
+        android:id="@+id/sState"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etContNo"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:padding="15dp"
+        android:background="@null"/>-->
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ED4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/sState"
+        app:layout_constraintRight_toRightOf="@+id/sState"
+        app:passwordToggleContentDescription="Show Password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorAccent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/sState">
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sState"
+            android:fontFamily="sans-serif"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ED5"
+        app:passwordToggleContentDescription="Show Password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorAccent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/ED4"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintLeft_toLeftOf="@+id/ED4"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/ED4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/etConfPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPass"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="*Mobile Number and Email Id will be verified by an OTP"
+        android:id="@+id/tvVerify"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/ED5"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+        <Button
+            android:id="@+id/bContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bluebtnripple"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvVerify"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
+    </ScrollView>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProf"
+    android:id="@+id/view">
+
+    <TextView
+        android:id="@+id/tvMP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="My Profile"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <LinearLayout
+        android:id="@+id/llMPEN"
+        android:padding="5dp"
+        android:weightSum="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvMP"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:inputType="textPersonName"
+            android:id="@+id/etEPName"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:paddingLeft="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMPEM"
+        android:padding="5dp"
+        android:weightSum="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/llMPEN"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/llMPEN"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/llMPEN">
+
+        <TextView
+            android:textColor="#000"
+            android:text="Email"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etEPEmail"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Email Id"
+            android:paddingLeft="15dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llMPESt"
+        android:padding="5dp"
+        android:weightSum="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/llMPEM"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/llMPEM"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/llMPEM"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <TextView
+            android:textColor="#000"
+            android:text="State"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <!--<EditText
+            android:id="@+id/etEPState"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="State"
+            android:paddingLeft="15dp"/>-->
+        <Button
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEPState"
+            android:layout_margin="5dp"
+            android:paddingLeft="15dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMPED"
+        android:padding="5dp"
+        android:weightSum="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/llMPESt"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/llMPESt"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/llMPESt"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <TextView
+            android:textColor="#000"
+            android:text="Date of Birth"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:inputType="date"
+            android:id="@+id/etEPDOB"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="DD/MM/YYYY"
+            android:paddingLeft="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMPES"
+        android:padding="5dp"
+        android:weightSum="4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/llMPED"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/llMPED"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/llMPED">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Sex"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:layout_weight="3"
+            android:id="@+id/rgSex"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/rbMal" />
+
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/rbFem" />
+
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:id="@+id/rbOth" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:id="@+id/llMPEP"
+        android:weightSum="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/llMPES"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/llMPES"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/llMPES">
+
+        <TextView
+            android:textColor="#000"
+            android:layout_gravity="center_vertical"
+            android:text="Phone Number"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etEPPhone"
+            android:inputType="number"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:paddingLeft="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMV"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="13sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="*Mobile Number will be verified by an OTP if Changed"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/llMPEP"
+        app:layout_constraintTop_toBottomOf="@+id/llMPEP"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/llMPEP"
+        android:layout_marginTop="4dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:textSize="20sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cp"
+        android:textColor="#a32"
+        android:id="@+id/tvChngPass"
+        android:gravity="center_horizontal|center_vertical"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="4dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvMV"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.498" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bEPSave"
+        android:gravity="center_vertical|center_horizontal"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvChngPass"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:padding="15dp"
+        android:background="@drawable/bluebtnripple"
+        android:text="Save Details"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.493" />
+
+</android.support.constraint.ConstraintLayout>

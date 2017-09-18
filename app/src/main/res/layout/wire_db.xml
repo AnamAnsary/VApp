@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="20dp"
+        android:padding="5dp"
+        android:background="@drawable/home_btn">
+        <TextView
+            android:id="@+id/dbt10"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solar Panel Types"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:background="@color/SubmitBtn"/>
+        <TextView
+            android:layout_below="@+id/dbt10"
+            android:id="@+id/db10tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LAPP wire"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a23"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db10tv1"
+            android:id="@+id/db10tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → German technology\n  → Best in class quality\n  → Made in Germany"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/db10tv2"
+            android:id="@+id/db10tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Polycab Wire"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a23"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db10tv3"
+            android:id="@+id/db10tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Indian Manufacturing\n  → Most used wires in the Industry."
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/db10tv4"
+            android:id="@+id/db10tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AE Solar"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a23"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db10tv5"
+            android:id="@+id/db10tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Upcoming brand\n  → Good Quality"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:id="@+id/db10btn1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/db10tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+
+            android:background="@drawable/bluebtnripple"
+            android:text="Got it"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+</ScrollView>

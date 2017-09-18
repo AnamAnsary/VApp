@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_btn"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="20dp"
+        android:padding="5dp"
+        android:background="@drawable/home_btn">
+        <TextView
+            android:id="@+id/dbt4"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solar Panel Types"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:background="@color/SubmitBtn"/>
+        <TextView
+            android:layout_below="@+id/dbt4"
+            android:id="@+id/db4tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vikram Solar Panel"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db4tv1"
+            android:id="@+id/db4tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Indigenious Manufacturing\n  → Market Leader in India\n  → 27 year linear warranty\n  → Easy Availibility\n  → Higher Panel Capacities\n  → Certified\n"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db4tv3"
+            android:id="@+id/db4tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Indigenious Manufacturing\n  → Good Quality\n  → 25 year linear warranty\n  → Readily Availibility\n  → Value for money"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/db4tv4"
+            android:id="@+id/db4tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JJ Solar Panel"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db4tv5"
+            android:id="@+id/db4tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Indigenious Manufacturing\n  → 25 year linear warranty"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_below="@+id/db4tv6"
+            android:id="@+id/db4tv7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMVEE Solar Panel"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db4tv7"
+            android:id="@+id/db4tv8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Indigenious Manufacturing\n  → 25 year linear warranty"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_below="@+id/db4tv8"
+            android:id="@+id/db4tv9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trina Solar Panel"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db4tv9"
+            android:id="@+id/db4tv10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Indigenious Manufacturing\n  → World leader from China\n  → Manufacturing in China"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_below="@+id/db4tv10"
+            android:id="@+id/db4tv11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rolta Solar Panel"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db4tv11"
+            android:id="@+id/db4tv12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Indigenious Manufacturing\n  → Good quality\n  → 25 year linear warranty"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/db4tv12"
+            android:id="@+id/db4tv13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navitas Solar Panel"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/db4tv13"
+            android:id="@+id/db4tv14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Indigenious Manufacturing\n  → Good quality panels\n  → 25 year linear warranty"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/db4tv15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PV PowerTech Solar Panel"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"
+            android:layout_below="@+id/db4tv14"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/db4btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+
+            android:background="@drawable/bluebtnripple"
+            android:text="Got it"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/db4tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deshmukh Solar Panel"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#a34"
+            android:layout_marginTop="155dp"
+            android:layout_below="@+id/db4tv1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benefits\n  → Indigenious Manufacturing\n  → Good quality panels\n  → 25 year linear warranty"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_below="@+id/db4tv15"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</ScrollView>
