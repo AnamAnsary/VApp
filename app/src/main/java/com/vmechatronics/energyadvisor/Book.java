@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -41,7 +42,7 @@ public class Book extends Activity {
 
     private static final String TAG = "Distance";
     private FirebaseAnalytics mFirebaseAnalytics;
-    ImageButton bAddr;
+    Button bAddr;
     Button bVLState;
 
     EditText etBuildNo;
@@ -62,6 +63,7 @@ public class Book extends Activity {
     String dAddr = "";
     int val = 0;
 
+    Typeface font;
     ArrayList<String> arrayState;
     private String srcState_url =  "https://vmechatronics.com/app/src_state.php";
 
@@ -71,10 +73,11 @@ public class Book extends Activity {
         setContentView(R.layout.activity_book);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
+        font = Typeface.createFromAsset(getAssets(), "HelveticaLTStd-Bold.otf");
         qid = this.getIntent().getStringExtra("qid");
         qdate = this.getIntent().getStringExtra("qdate");
 
-        bAddr = (ImageButton)findViewById(R.id.bAddr);
+        bAddr = (Button)findViewById(R.id.bAddr);
         bVLState = (Button)findViewById(R.id.bVLState);
         etBuildNo = (EditText)findViewById(R.id.etBuildNo);
         etCity = (EditText)findViewById(R.id.etCity);
@@ -103,6 +106,7 @@ public class Book extends Activity {
             }
         });
 
+        bAddr.setTypeface(font);
         bAddr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

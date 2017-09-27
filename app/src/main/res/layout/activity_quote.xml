@@ -1,25 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Quote">
+    tools:context=".Quote"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
     <ImageView
         android:id="@+id/logo"
         android:src="@drawable/logoa"
         android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"/>
-    <TextView android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Visions Energy Advisor"
         android:id="@+id/appname"
         android:textAlignment="center"
-        android:layout_below="@+id/logo"
         android:textSize="20sp"
         android:textColor="#1976d2"
         android:textStyle="bold"
-        />
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,26 +45,32 @@
         android:textColor="#000"
         android:padding="5dp"
         android:textSize="18sp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:id="@+id/tvName"
-        android:layout_below="@+id/appname"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/appname"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.017" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_width="326dp"
+        android:layout_height="83dp"
         android:text="Your Quote for the Solar Power system has been sent to your mail and your Download is available here. Thank you for taking your First Step towards Going Green!"
         android:id="@+id/tv1"
         android:padding="5dp"
         android:textColor="#000"
         android:textSize="16sp"
-        android:layout_below="@id/tvName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,73 +80,99 @@
         android:textColor="#000"
         android:id="@+id/tvRefID"
         android:textSize="16sp"
-        android:layout_below="@id/tv1"
-        android:layout_centerHorizontal="true"/>
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <ImageButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bDowQuo"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/tvRefID"
         android:drawableRight="@android:drawable/stat_sys_download"
-        android:background="@null"
         android:cropToPadding="true"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        android:src="@drawable/downloadquote"
-        android:layout_alignStart="@+id/logo"
-        android:layout_alignEnd="@+id/logo" />
+        android:padding="10dp"
+        android:background="@drawable/bluebtnripple"
+        android:text="Download Quote"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvRefID"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
         android:text="Book Your Site visit NOW and call our Expert at your Door!"
         android:id="@+id/tvBkNow"
-        android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginBottom="10dp"
-        android:layout_above="@+id/llQBH"
         android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/llQBH" />
 
     <LinearLayout
-        android:paddingBottom="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="2"
         android:id="@+id/llQBH"
-        android:layout_alignParentBottom="true">
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:paddingBottom="10dp"
+        android:weightSum="2"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintHorizontal_bias="0.0">
 
-        <ImageButton
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+        <Button
             android:id="@+id/bBkNow"
-            android:background="@null"
-            android:cropToPadding="true"
-            android:adjustViewBounds="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/booknow"/>
-
-        <ImageButton
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Home"
-            android:textStyle="bold"
-            android:id="@+id/bGoHom"
-            android:background="@null"
-            android:cropToPadding="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
             android:adjustViewBounds="true"
+            android:background="@drawable/bluebtnripple"
+            android:cropToPadding="true"
+
             android:scaleType="centerInside"
-            android:src="@drawable/home123"/>
+            android:text="Book now"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bGoHom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bluebtnripple"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            android:text="Home"
+
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

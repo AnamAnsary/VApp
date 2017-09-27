@@ -99,19 +99,22 @@
             android:textSize="18sp"
             android:textColor="#000"
             />
-        <ImageButton
+        <Button
             android:id="@+id/db3btn1"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/db3tv6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@null"
             android:cropToPadding="true"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
-            android:src="@drawable/got_it"
             android:layout_marginLeft="100dp"
-            android:layout_marginRight="100dp"/>
+            android:layout_marginRight="100dp"
+
+            android:background="@drawable/bluebtnripple"
+            android:text="Got it"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
     </RelativeLayout>
 </ScrollView>

@@ -247,19 +247,23 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal" />
     </LinearLayout>
-    <ImageButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/calculate"
         android:id="@+id/bCalc"
-        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
-        android:layout_below="@+id/llST"
         android:cropToPadding="true"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        android:background="@null" />
+        android:background="@drawable/bluebtnripple"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_below="@+id/llST"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

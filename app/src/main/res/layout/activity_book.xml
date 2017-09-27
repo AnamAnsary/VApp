@@ -101,18 +101,21 @@
         android:hint="Pincode"
         android:layout_below="@+id/bVLState" />
 
-    <ImageButton
+    <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/continue_butt"
         android:id="@+id/bAddr"
         android:layout_marginTop="41dp"
         android:layout_below="@+id/etPincode"
         android:layout_alignStart="@+id/tvLoc"
         android:layout_alignEnd="@+id/tvLoc"
-        android:background="@null"
         android:cropToPadding="false"
         android:adjustViewBounds="true"
-        android:scaleType="centerInside"/>
+        android:scaleType="centerInside"
+
+        android:background="@drawable/bluebtnripple"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
 
 </RelativeLayout>

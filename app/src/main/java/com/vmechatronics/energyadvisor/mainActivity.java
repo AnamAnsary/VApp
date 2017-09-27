@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.preference.PreferenceManager;
@@ -44,6 +45,7 @@ public class mainActivity extends AppCompatActivity {
     UserSessionManager session;
     HashMap<String, String> user;
     private FirebaseAnalytics mFirebaseAnalytics;
+    Typeface font;
 
     ImageButton bCalc;
     Button s;
@@ -104,6 +106,8 @@ public class mainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+        font = Typeface.createFromAsset(getAssets(), "HelveticaLTStd-Bold.otf");
 
         session = new UserSessionManager(getApplicationContext());
         user = session.getUserDetails();
@@ -235,7 +239,6 @@ public class mainActivity extends AppCompatActivity {
                 }).create().show();
             }
         });
-
 
         bCalc = (ImageButton) findViewById(R.id.bCalc);
         bCalc.setOnClickListener(new View.OnClickListener() {
@@ -416,7 +419,8 @@ public class mainActivity extends AppCompatActivity {
         final Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.state_db);
 
-        ImageButton dialogButton = (ImageButton) dialog.findViewById(R.id.db1btn1);
+        Button dialogButton = (Button) dialog.findViewById(R.id.db1btn1);
+        dialogButton.setTypeface(font);
         // if button is clicked, close the custom dialog
         dialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -431,7 +435,8 @@ public class mainActivity extends AppCompatActivity {
     public void onSolarDB(View v) {
         final Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.solart_db);
-        ImageButton dialogButton = (ImageButton) dialog.findViewById(R.id.db3btn1);
+        Button dialogButton = (Button) dialog.findViewById(R.id.db3btn1);
+        dialogButton.setTypeface(font);
         // if button is clicked, close the custom dialog
         dialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -446,7 +451,7 @@ public class mainActivity extends AppCompatActivity {
     public void onConnDB(View v) {
         final Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.conn_db);
-        ImageButton dialogButton = (ImageButton) dialog.findViewById(R.id.db2btn1);
+        Button dialogButton = (Button) dialog.findViewById(R.id.db2btn1);
         // if button is clicked, close the custom dialog
         dialogButton.setOnClickListener(new View.OnClickListener() {
             @Override

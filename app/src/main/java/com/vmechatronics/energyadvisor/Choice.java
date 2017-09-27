@@ -97,7 +97,7 @@ public class Choice extends AppCompatActivity {
     Button s6;
     Button s7;
     Button s8;
-    ImageButton bGetQuo;
+    Button bGetQuo;
     private String TAG = "Choice";
     private String getInverter_url = "https://www.vmechatronics.com/app/readdbase.php";
     private String emailVariable_url = "https://vmechatronics.com/app/EVerification_Variable.php";
@@ -130,7 +130,7 @@ public class Choice extends AppCompatActivity {
         s7 = (Button) findViewById(R.id.sMeterType);
         s8 = (Button) findViewById(R.id.sPowerCut);
 
-        bGetQuo = (ImageButton) findViewById(R.id.bGetQuo);
+        bGetQuo = (Button) findViewById(R.id.bGetQuo);
 
         tvRoofI = (TextView) findViewById(R.id.tvRoofI);
         tvShedI = (TextView) findViewById(R.id.tvShedI);
@@ -538,6 +538,7 @@ public class Choice extends AppCompatActivity {
             }
         });
 
+        bGetQuo.setTypeface(font);
         bGetQuo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

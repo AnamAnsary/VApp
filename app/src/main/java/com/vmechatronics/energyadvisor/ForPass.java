@@ -6,6 +6,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -38,7 +39,7 @@ public class ForPass extends Activity {
 
     private static final String TAG = "FOR PASS";
     private FirebaseAnalytics mFirebaseAnalytics;
-
+    Typeface font;
     EditText etFMI;
     Button bFPGP;
     TextView tvFPSU;
@@ -51,8 +52,10 @@ public class ForPass extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_for_pass);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        font = Typeface.createFromAsset(getAssets(), "HelveticaLTStd-Bold.otf");
 
         etFMI = (EditText)findViewById(R.id.etFMI);
+        bFPGP.setTypeface(font);
         bFPGP = (Button)findViewById(R.id.bFPGP);
         bFPGP.setOnClickListener(new View.OnClickListener() {
             @Override

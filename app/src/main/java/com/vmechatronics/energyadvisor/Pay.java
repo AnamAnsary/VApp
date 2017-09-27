@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
@@ -20,7 +21,7 @@ import java.util.HashMap;
 public class Pay extends Activity {
 
     private static final String TAG = "Pay";
-    ImageButton bPay;
+    Button bPay;
     CheckBox cbTC;
     TextView tvBillAm;
     TextView tvDAdd;
@@ -72,7 +73,7 @@ public class Pay extends Activity {
 
         tvBillAm = (TextView)findViewById(R.id.tvBillAm);
         tvDAdd = (TextView)findViewById(R.id.tvDAdd);
-        bPay = (ImageButton) findViewById(R.id.bPay);
+        bPay = (Button) findViewById(R.id.bPay);
         cbTC = (CheckBox) findViewById(R.id.cbTC);
         tvTC = (TextView)findViewById(R.id.tvTC);
 
@@ -106,5 +107,4 @@ public class Pay extends Activity {
         Log.d("FAnalytics", "setCurrentScreen: " + getClass().getSimpleName());
         super.onResume();
     }
-
 }

@@ -93,7 +93,6 @@ public class Login extends Activity {
             @Override
             public void onClick(View view) {
                 Intent ifp = new Intent(Login.this, ForPass.class);
-                finish();
                 startActivity(ifp);
             }
         });
@@ -484,7 +483,6 @@ public class Login extends Activity {
             public void onClick(View view) {
                 Intent i4 = new Intent(Login.this, GSignInActivity.class);
                 startActivity(i4);
-                finish();
             }
         });
 

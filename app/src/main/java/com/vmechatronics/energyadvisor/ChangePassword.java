@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -42,6 +43,8 @@ public class ChangePassword extends Activity {
     private static final String TAG = "Change password";
     private FirebaseAnalytics mFirebaseAnalytics;
     UserSessionManager session;
+    Typeface font;
+
 
     Button bUpdPass;
     EditText etOldP;
@@ -63,6 +66,7 @@ public class ChangePassword extends Activity {
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         session = new UserSessionManager(getApplicationContext());
+        font = Typeface.createFromAsset(getAssets(), "HelveticaLTStd-Bold.otf");
 
         user = session.getUserDetails();
 
@@ -81,7 +85,7 @@ public class ChangePassword extends Activity {
 
 
         bUpdPass = (Button)findViewById(R.id.bUpdPass);
-
+        bUpdPass.setTypeface(font);
         bUpdPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

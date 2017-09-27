@@ -24,20 +24,23 @@
         android:textSize="16sp"
         android:padding="20dp"
         android:textColor="#000"/>
-    <ImageButton
+    <Button
         android:id="@+id/db1btn1"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/db1tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Got It"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
-        android:background="@null"
         android:cropToPadding="true"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
         android:src="@drawable/got_it"
         android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"/>
+        android:layout_marginRight="100dp"
+
+        android:background="@drawable/bluebtnripple"
+        android:text="Got it"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
 </RelativeLayout>

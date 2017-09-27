@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -100,9 +101,9 @@ public class Quote extends Activity {
     ArrayList<Float> inv_size;
     ArrayList<Float> inv_cost;
 
-    ImageButton bBkNow;
-    ImageButton bGoHom;
-    ImageButton bDowQuo;
+    Button bBkNow;
+    Button bGoHom;
+    Button bDowQuo;
     TextView tv1;
     TextView tvRefID;
     TextView tvName;
@@ -135,7 +136,7 @@ public class Quote extends Activity {
         tvRefID = (TextView) findViewById(R.id.tvRefID);
         tvName = (TextView) findViewById(R.id.tvName);
 
-        bDowQuo = (ImageButton) findViewById(R.id.bDowQuo);
+        bDowQuo = (Button) findViewById(R.id.bDowQuo);
         tvName.setText("Hello " + name + ",");
 
         final ProgressDialog pd = ProgressDialog.show(Quote.this, "", "Calculating...", true);
@@ -487,7 +488,7 @@ public class Quote extends Activity {
         tv1.setText(Html.fromHtml(first + next));
 
 
-        bBkNow = (ImageButton) findViewById(R.id.bBkNow);
+        bBkNow = (Button) findViewById(R.id.bBkNow);
         bBkNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -506,7 +507,7 @@ public class Quote extends Activity {
                 startActivity(i3);
             }
         });
-        bGoHom = (ImageButton) findViewById(R.id.bGoHom);
+        bGoHom = (Button) findViewById(R.id.bGoHom);
         bGoHom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

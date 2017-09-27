@@ -299,19 +299,22 @@ android:layout_below="@id/llC7">
     android:visibility="invisible" />
 </LinearLayout>
 
-    <ImageButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bGetQuo"
-        android:src="@drawable/quoteget"
         android:layout_below="@+id/llC8"
         android:layout_centerHorizontal="true"
-        android:background="@null"
         android:cropToPadding="false"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
         android:layout_margin="50dp"
-        android:gravity="center_vertical|center_horizontal" />
+        android:gravity="center_vertical|center_horizontal"
+
+        android:background="@drawable/bluebtnripple"
+        android:text="Get Quote"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
 
 
 </RelativeLayout>

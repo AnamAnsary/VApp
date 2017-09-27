@@ -94,7 +94,7 @@
                 android:layout_below="@+id/db2tv5"
                 android:layout_alignParentStart="true" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/db2btn1"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/db2tv6"
@@ -102,13 +102,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:background="@null"
                 android:cropToPadding="true"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside"
                 android:src="@drawable/got_it"
                 android:layout_marginLeft="100dp"
-                android:layout_marginRight="100dp"/>
+                android:layout_marginRight="100dp"
+
+                android:background="@drawable/bluebtnripple"
+                android:text="Got it"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
         </LinearLayout>
     </ScrollView>
 
